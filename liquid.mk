@@ -7,9 +7,6 @@ PRODUCT_LOCALES := cs_CZ da_DK de_AT de_CH de_DE de_LI el_GR en_AU en_CA en_GB e
 # Inherit some common liquid stuff.
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
 
-# Inherit some common CDMA stuff.
-$(call inherit-product, vendor/liquid/config/common_cdma.mk)
-
 # overlay for international dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/liquid/overlay/all_dictionaries
 
