@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
 # Prebuilts
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/media_profiles.xml:system/etc/media_profiles.xml
+    
+# OTA ID
+PRODUCT_PROPERTY_OVERRIDES += \
+    otaupdater.otaid=liquidspyder
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, vendor/motorola/spyder/spyder-vendor.mk)
